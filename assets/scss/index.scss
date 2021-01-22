@@ -1,5 +1,6 @@
 @import "./libs/foundation-six.min";
 @import "./libs/owl.carousel.min";
+@import "./libs/owl.theme.default.min";
 
 a, form, button, input, textarea {
     &:active, &:focus 
@@ -17,6 +18,6 @@ $browser-context: 16;
 
 @import "./blocks/main/header";
 @import "./blocks/main/footer";
-@import "./blocks/block";
+@import "./blocks/index-slider";
 
     

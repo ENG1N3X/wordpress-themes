@@ -1,3 +1,32 @@
 header {
-    background: blue;
+	nav.menu {
+		padding: 20px 10px;
+		.menu-list {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			display: flex;
+			align-items: center;
+			.menu-item {
+				&:not(:last-child) {
+					margin-right: 20px;
+				}
+				&:hover {
+					a {
+						color: bisque;
+					}
+				}
+				a {
+				    font-size: rem(16);
+					color: lightcoral;
+					text-decoration: none;
+                }
+                &.current-menu-item {
+                    a {
+                        color: bisque;
+                    }
+                }
+			}
+		}
+	}
 }

@@ -10,10 +10,11 @@ if ( ! function_exists( 'thirteen_setup' ) ) :
 		add_theme_support( 'automatic-feed-links' );
 		add_theme_support( 'title-tag' );
 		add_theme_support( 'post-thumbnails' );
+		add_theme_support( 'menus' );
 
 		register_nav_menus(
 			array(
-				'menu-1' => esc_html__( 'Primary', 'thirteen' ),
+				'header-menu' => esc_html__( 'Header Menu' ),
 			)
 		);
 
@@ -81,6 +82,6 @@ add_action( 'wp_enqueue_scripts', 'thirteen_styles' );
 
 function thirteen_scripts() {
 	wp_deregister_script("jquery");
-	wp_enqueue_script( "jquery", get_theme_file_uri("/assets/js/scripts.min.js"));
+	wp_enqueue_script( "scripts", get_theme_file_uri("/assets/js/scripts.min.js"));
 }
 add_action( 'wp_enqueue_scripts', 'thirteen_scripts' );

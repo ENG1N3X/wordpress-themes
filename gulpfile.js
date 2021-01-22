@@ -26,7 +26,7 @@ gulp.task("styles", () => {
 
 gulp.task("scripts", () => {
 	return gulp
-		.src(["./assets/js/main/**/*.js", "./assets/js/libs/jquery-3.5.1.min.js","./assets/js/libs/owl.carousel.min.js",])
+		.src(["./assets/js/libs/jquery-3.5.1.min.js","./assets/js/libs/owl.carousel.min.js", "./assets/js/main/**/*.js"])
 		// .pipe(
 		// 	babel({
 		// 		presets: ["@babel/preset-env"],
@@ -44,7 +44,7 @@ gulp.task("scripts", () => {
 
 gulp.task("watch", () => {
 	gulp.watch("./assets/scss/**/*.*", gulp.parallel("styles"));
-	gulp.watch("./assets/js/main/**/*.js", gulp.parallel("scripts"));
+	gulp.watch("./assets/js/main/*.js", gulp.parallel("scripts"));
 	gulp.watch("./assets/js/libs/*.js", gulp.parallel("scripts"));
 });
 
