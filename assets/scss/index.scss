@@ -1,0 +1,22 @@
+@import "./libs/foundation-six.min";
+@import "./libs/owl.carousel.min";
+
+a, form, button, input, textarea {
+    &:active, &:focus 
+    {
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+// px to rem
+$browser-context: 16;
+@function rem($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}rem;
+}
+
+@import "./blocks/main/header";
+@import "./blocks/main/footer";
+@import "./blocks/block";
+
+    
