@@ -1,1 +1,1 @@
-# Theme Template
+# Training wordpress theme
