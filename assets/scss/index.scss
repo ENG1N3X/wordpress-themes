@@ -16,8 +16,16 @@ $browser-context: 16;
   @return #{$pixels/$context}rem;
 }
 
+.grid-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 rem(10);
+}
+
 @import "./blocks/main/header";
 @import "./blocks/main/footer";
 @import "./blocks/index-slider";
+@import "./blocks/category";
+@import "./blocks/single";
 
     

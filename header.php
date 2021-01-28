@@ -1,15 +1,8 @@
-<header>
-	<?php
-		wp_nav_menu(
-			array(
-				'theme_location' => 'header-menu',
-				'container' => 'nav',
-				'container_id' => '',
-				'container_class' => "menu",
-				'menu_id' => '',
-				'menu_class'      => 'menu-list',
-				'items_wrap' => '<ul class="%2$s">%3$s</ul>'
-			)
-		);
-	?>
-</header>
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+	<head>
+		<?php get_template_part( 'components/head' ); ?>
+	</head>
+	<body <?php body_class(); ?>>
+
+	<?php get_template_part( 'components/header' ); ?>

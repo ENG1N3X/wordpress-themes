@@ -1,31 +1,31 @@
 header {
 	nav.menu {
 		padding: 20px 10px;
-		.menu-list {
+		ul.menu-list {
 			list-style: none;
 			padding: 0;
 			margin: 0;
 			display: flex;
 			align-items: center;
-			.menu-item {
+			li.menu-item {
+				a {
+					font-size: rem(16);
+					color: #000;
+					text-decoration: none;
+				}
+				&.current-menu-item {
+					a {
+						text-decoration: underline;
+					}
+				}
 				&:not(:last-child) {
 					margin-right: 20px;
 				}
 				&:hover {
 					a {
-						color: bisque;
+						opacity: .95;
 					}
 				}
-				a {
-				    font-size: rem(16);
-					color: lightcoral;
-					text-decoration: none;
-                }
-                &.current-menu-item {
-                    a {
-                        color: bisque;
-                    }
-                }
 			}
 		}
 	}

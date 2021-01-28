@@ -10,20 +10,20 @@ if ( ! function_exists( 'thirteen_setup' ) ) :
 		add_theme_support( 'automatic-feed-links' );
 		add_theme_support( 'title-tag' );
 		add_theme_support( 'post-thumbnails' );
-		add_theme_support( 'menus' );
 
 		register_nav_menus(
 			array(
 				'header-menu' => esc_html__( 'Header Menu' ),
+				'footer-menu' => esc_html__( 'Footer Menu' ),
 			)
 		);
 
 		add_theme_support(
 			'html5',
 			array(
-				'search-form',
-				'comment-form',
-				'comment-list',
+				// 'search-form',
+				// 'comment-form',
+				// 'comment-list',
 				'gallery',
 				'caption',
 				'style',
@@ -31,18 +31,18 @@ if ( ! function_exists( 'thirteen_setup' ) ) :
 			)
 		);
 
-		add_theme_support(
-			'custom-background',
-			apply_filters(
-				'thirteen_custom_background_args',
-				array(
-					'default-color' => 'ffffff',
-					'default-image' => '',
-				)
-			)
-		);
+		// add_theme_support(
+		// 	'custom-background',
+		// 	apply_filters(
+		// 		'thirteen_custom_background_args',
+		// 		array(
+		// 			'default-color' => 'ffffff',
+		// 			'default-image' => '',
+		// 		)
+		// 	)
+		// );
 
-		add_theme_support( 'customize-selective-refresh-widgets' );
+		// add_theme_support( 'customize-selective-refresh-widgets' );
 
 		add_theme_support(
 			'custom-logo',
