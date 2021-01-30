@@ -1,5 +1,5 @@
 main.single-template {
-	padding: 100px 0;
+	padding: rem(100) 0;
 	section.single {
 		.image {
 			position: relative;
@@ -31,7 +31,7 @@ main.single-template {
 			text-align: center;
 		}
 		.text {
-			padding: 20px 0;
+			padding: rem(20) 0;
 			p {
 				margin: 0;
 			}

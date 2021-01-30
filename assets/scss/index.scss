@@ -2,24 +2,33 @@
 @import "./libs/owl.carousel.min";
 @import "./libs/owl.theme.default.min";
 
-a, form, button, input, textarea {
-    &:active, &:focus 
-    {
-        outline: none;
-        box-shadow: none;
-    }
-}
+@import "./fonts";
 
 // px to rem
 $browser-context: 16;
 @function rem($pixels, $context: $browser-context) {
-  @return #{$pixels/$context}rem;
+	@return #{$pixels/$context}rem;
+}
+
+body {
+	font-family: "Roboto-Regular", sans-serif;
+}
+
+form,
+button,
+input,
+textarea {
+	&:active,
+	&:focus {
+		outline: none;
+		box-shadow: none;
+	}
 }
 
 .grid-container {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 rem(10);
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 rem(10);
 }
 
 @import "./blocks/main/header";
@@ -27,5 +36,4 @@ $browser-context: 16;
 @import "./blocks/index-slider";
 @import "./blocks/category";
 @import "./blocks/single";
-
-    
+@import "./blocks/404";

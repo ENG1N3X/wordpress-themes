@@ -1,0 +1,28 @@
+main.error-template {
+	padding: 100px 0;
+	section.error {
+		text-align: center;
+		.title {
+			font-size: rem(72);
+			line-height: rem(72);
+			margin: 0 0 rem(10) 0;
+		}
+		.text {
+			font-size: rem(36);
+			margin: 0 0 rem(20) 0;
+		}
+		.back {
+			text-decoration: none;
+			text-transform: uppercase;
+			padding: rem(13) rem(20);
+			border: 1px solid #000;
+			color: #000;
+			transition: all 0.3s linear;
+			&:hover {
+				transition: all 0.3s linear;
+				background-color: #000;
+				color: #fff;
+			}
+		}
+	}
+}

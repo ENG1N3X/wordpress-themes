@@ -76,12 +76,12 @@ add_action( 'after_setup_theme', 'thirteen_setup' );
  * Scripts and styles.
  */
 function thirteen_styles() {
-	wp_enqueue_style( 'styles', get_theme_file_uri("/assets/css/styles.min.css"));
+	wp_enqueue_style('styles', get_template_directory_uri() . '/assets/css/styles.min.css', array(), filemtime(get_template_directory() . '/assets/css/styles.min.css'), false);
 }
 add_action( 'wp_enqueue_scripts', 'thirteen_styles' );
 
 function thirteen_scripts() {
 	wp_deregister_script("jquery");
-	wp_enqueue_script( "scripts", get_theme_file_uri("/assets/js/scripts.min.js"));
+	wp_enqueue_script('scripts', get_template_directory_uri() . '/assets/js/scripts.min.js', array(), filemtime(get_template_directory() . '/assets/js/scripts.min.js'), true);
 }
 add_action( 'wp_enqueue_scripts', 'thirteen_scripts' );

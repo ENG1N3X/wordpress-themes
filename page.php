@@ -1,7 +1,16 @@
 <?php
+	get_header();
+?>
 
-the_title();
+<main class="page-template">
+	<section class="error grid-container">
+        <h2 class="title"><?php the_title(); ?></h2>
+        <p class="text">
+          <?php the_content(); ?>
+        </p>
+	</section>
+</main>
 
-the_content();
-
+<?php
+	get_footer();
 ?>
