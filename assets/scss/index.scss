@@ -31,9 +31,21 @@ textarea {
 	padding: 0 rem(10);
 }
 
+.main-title {
+	color: #000;
+	text-align: center;
+	font-size: rem(40)
+}
+
 @import "./blocks/main/header";
 @import "./blocks/main/footer";
-@import "./blocks/index-slider";
+
+@import "./blocks/main-page";
+@import "./blocks/submain-page";
+@import "./blocks/blog-page";
+
+@import "./blocks/article-item";
+
 @import "./blocks/category";
 @import "./blocks/single";
 @import "./blocks/404";

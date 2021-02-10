@@ -1,0 +1,18 @@
+main.main-page {
+  section.hero {
+    .hero-slider {
+      .item {
+        text-align: center;
+        padding: rem(20);
+        .item__title {
+          font-size: rem(36);
+          margin: 0;
+        }
+        .item__text {
+          font-size: rem(20);
+          margin: 0;
+        }
+      }
+    }
+  }
+}

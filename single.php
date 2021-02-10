@@ -4,9 +4,14 @@
 
 <main class="single-template">
 	<section class="single grid-container">
-    <div class="image">
-      <?php echo get_the_post_thumbnail('','', array( 'class' => 'image-src' )); ?>
-    </div>
+
+    <?php $image =  get_the_post_thumbnail('','', array( 'class' => 'image-src' )); ?>
+    <?php if($image) : ?>
+      <div class="image">
+        <?php echo get_the_post_thumbnail('','', array( 'class' => 'image-src' )); ?>
+      </div>
+    <?php endif; ?>
+
     <span class="date">
       <?php the_time(); ?>
       <?php echo get_the_date(); ?>

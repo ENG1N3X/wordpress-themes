@@ -1,0 +1,20 @@
+.article-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  min-width: 300px;
+  min-height: 300px;
+  border: 1px solid #000;
+  padding: rem(30);
+  transition: box-shadow .3s linear;
+  &:hover {
+    transition: box-shadow .3s linear;
+    box-shadow: 0 0 10px #000;
+  }
+  .title {
+    color: #000;
+    text-align: center;
+    margin: 0;
+  }
+}
